@@ -1,3 +1,7 @@
 /* .navbar-nav {
     display: flex;
 } */
+ 
+main {
+    padding-top: calc(136px - (136px / 3));
+}
