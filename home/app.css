@@ -1,7 +1,11 @@
-/* .navbar-nav {
+.navbar-custom {
+    height: 136px;
+}
+
+.h1-container {
+    height: calc(100vh - 136px);
     display: flex;
-} */
- 
-main {
-    padding-top: calc(136px - (136px / 3));
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
