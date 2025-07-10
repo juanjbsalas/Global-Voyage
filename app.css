@@ -3,6 +3,7 @@
 }
 
 .h1-container {
+    /* z-index: 100; */
     height: calc(100vh - 136px);
     display: flex;
     flex-direction: column;
@@ -38,6 +39,7 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
 
 
 /* Keep styliong navbar */
