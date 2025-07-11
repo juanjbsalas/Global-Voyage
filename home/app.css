@@ -9,6 +9,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    /* position: relative;
+    z-index: 1; */
 }
 
 .h1-container a {
@@ -37,7 +40,7 @@ main {
 footer {
     background-color: #f8f9fa;
     text-align: center;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 
