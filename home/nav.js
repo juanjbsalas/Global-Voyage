@@ -21,6 +21,5 @@ fetch(window.location.pathname.includes('/travel-dest') ? '/travel-dest/home/nav
             menuIcon.classList.replace('fa-xmark', 'fa-bars');
         }
     });
-
 });
-console.log('It is RUNNING!!')
+console.log('It is RUNNING!!');
