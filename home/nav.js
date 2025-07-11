@@ -1,4 +1,5 @@
-fetch('home/nav.html')
+// fetch('/travel-dest/home/nav.html')
+fetch(window.location.pathname.includes('/travel-dest') ? '/travel-dest/home/nav.html' : 'home/nav.html')
 .then(res => res.text())
 .then(text => {
     let oldelem = document.querySelector("script#replace_with_navbar");
@@ -22,3 +23,4 @@ fetch('home/nav.html')
     });
 
 });
+console.log('It is RUNNING!!')
