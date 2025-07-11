@@ -33,19 +33,3 @@
     </div>
     </div>
 
-    <!-- Navbar JS -->
-    <script>
-    const toggleButton = document.getElementById('menu-toggle');
-    const menuIcon = document.getElementById('menu-icon');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    toggleButton.addEventListener('click', function(){
-        mobileMenu.classList.toggle('hidden');
-
-        if(menuIcon.classList.contains('fa-bars')) {
-            menuIcon.classList.replace('fa-bars', 'fa-xmark');
-        } else {
-            menuIcon.classList.replace('fa-xmark', 'fa-bars');
-        }
-    });
-    </script>
