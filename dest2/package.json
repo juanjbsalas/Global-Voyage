@@ -1,0 +1,17 @@
+{
+ "name": "Andalusia",
+ "version": "1.0.0",
+ "main": "index.js",
+
+  "scripts": {
+      "watch":"tailwindcss -i ./src/input.css -o ./output.css --watch"
+    },
+
+    "keywords": [],
+    "author":"",
+    "license": "ISC",
+    "description": "",
+  "devDependencies": {
+    "tailwindcss": "^4.1.11"
+  }
+}

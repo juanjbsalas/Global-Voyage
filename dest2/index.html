@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <title>Andalusia</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./output.css">
     <script src="script.js" defer></script>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
   <!-- Navbar Here -->
     <nav class="bg-gray-100 px-8 py-7">
@@ -30,7 +33,7 @@
             </div>
             <!-- Hamburguer Menu -->
             <div class="md:hidden">
-                <button id="menu-toggle" class="text=black">
+                <button id="menu-toggle" class="text-black">
                     <i id="menu-icon" class="fa-solid fa-bars"></i>
                 </button>
             </div>
@@ -46,15 +49,95 @@
             <a href="#" class="w-full hover:bg-sky-400 px-3 py-2 rounded">Contact</a>
         </div>
     </div>    
-    <!-- Nav Bar ends here -->
 
-<main>
+    <main>
+        <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
+        <section id="home">
 
+        </section>
 
+        <!--~~~~~~~~~~~~~~~ Services ~~~~~~~~~~~~~~~-->
+        <div>
 
+        </div>
 
+        <!--~~~~~~~~~~~~~~~ About us ~~~~~~~~~~~~~~~-->
+        <section id="about">
 
-</main>
+        </section>
 
+        <!--~~~~~~~~~~~~~~~ Popular ~~~~~~~~~~~~~~~-->
+        <section id="popular">
+
+        </section>
+
+        <!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
+        <section id="review">
+          <div class="flex flex col items-center gap-3 text-center mb-10 md:mb-20">
+            <h2 class="title">Testimonials</h2>
+            <p class="max-w-2x1">What our clients say about us</p>
+          </div>
+          <div>
+            <div>
+              <ul>
+                <li>
+                  <p>
+                    "The trip was amazing! I had the best time exploring Andalusia.
+                     Tapas is a little part of Spain I will bring with me forever. Ronda was breathtaking and the flamenco shows were unforgettable.
+                     Highly recommend Global Voyage for anyone looking to explore Spain!"
+                  </p>
+                  <div class="flex items-center gap-3">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User Image" class="rounded-full w-12 h-12">
+                  <div class="ml-2">
+                    <h4 class="text-black-500">Maria Brown</h4>
+                    <p>Traveler</p>
+                    <i class="ri-double-quotes-r"></i>
+                  </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
+    <footer class="bg-gray-100 text-black">
+        <div class="container mx-auto px-14 py-4">
+            <div class="grid md:grid-cols-12 grid-cols-1 gap-4">
+                <div class="lg:col-span-6 md:col-span-12">
+                    <a href="#">
+                        <img src="https://png.pngtree.com/png-clipart/20250115/original/pngtree-airplane-logo-vector-png-image_19677986.png" alt="" class="h-12">
+                    </a>
+                    <p class="mt-6 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, placeat!</p>
+                </div>
+                <div class="lg:col-span-2 md:col-span-4 col-span-12 text-center">
+                    <h5 class="tracking-wide text-gray-800 font-semibold">Company</h5>
+                    <ul class="list-none mt-6 space-y-2">
+                        <li><a href="#" class="hover:text-gray-400 transition-all duration-500 ease-in-out">Home</a></li>
+                        <li><a href="#" class="hover:text-gray-400 transition-all duration-500 ease-in-out">Destinations</a></li>
+                        <li><a href="#" class="hover:text-gray-400 transition-all duration-500 ease-in-out">Shop</a></li>
+                        <li><a href="#" class="hover:text-gray-400 transition-all duration-500 ease-in-out">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-3 md:col-span-4 col-span-12 text-center">
+                    <h5 class="tracking-wide text-gray-800 font-semibold">Important Links</h5>
+                    <ul class="list-none mt-6 space-y-2">
+                        <li><a href="#" class="hover:text-gray-400 transition-all duration-500 ease-in-out">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-gray-400 transition-all duration-500 ease-in-out">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-gray-400 transition-all duration-500 ease-in-out">Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </footer>
+    <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~ SCROLLREVEAL ~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~ mainjs ~~~~~~~~~~-->
+    
 </body>
 </html>
