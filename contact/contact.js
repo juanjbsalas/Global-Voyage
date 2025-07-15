@@ -52,3 +52,4 @@ fetch(window.location.pathname.includes('/travel-dest') ? '/travel-dest/home/nav
     });
 });
 console.log('It is RUNNING!!');
+
