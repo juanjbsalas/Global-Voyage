@@ -1,30 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">    
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Global Voyage</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- CSS -->
+     <link rel="stylesheet" href="app.css">
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sriracha&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <title>Destinations</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+  </head>
 <body>
-   <!-- Navbar Here -->
+    <!-- Navbar Here -->
     <nav class="bg-gray-100 px-8 py-7">
         <div class="flex justify-between items-center">
-            <a href="#" class="text-3xl font-bold z-60">Global Voyage</a>
+            <a href="#" class="text-5xl font-bold z-60 tangerine-bold">Global Voyage</a>
             <!-- <img src="" alt=""> -->
             <div class="hidden md:flex space-x-4">
-                <a href="https://juanjbsalas.github.io/travel-dest/" class="hover:bg-sky-400 px-3 py-2 rounded">Home</a>
-                <a href="#" class="hover:bg-sky-400 px-3 py-2 rounded">Destinations</a>
-                <a href="https://juanjbsalas.github.io/travel-dest/shop" class="hover:bg-sky-400 px-3 py-2 rounded">Shop</a>
-                <a href="https://juanjbsalas.github.io/travel-dest/contact" class="hover:bg-sky-400 px-3 py-2 rounded">Contact</a>
+                <a href="https://juanjbsalas.github.io/travel-dest/" class="hover:bg-[#005FA3] px-3 py-2 rounded">Home</a>
+                <a href="#" class="hover:bg-[#005FA3] px-3 py-2 rounded">Destinations</a>
+                <a href="https://juanjbsalas.github.io/travel-dest/shop" class="hover:bg-[#005FA3] px-3 py-2 rounded">Shop</a>
+                <a href="https://juanjbsalas.github.io/travel-dest/contact" class="hover:bg-[#005FA3] px-3 py-2 rounded">Contact</a>
             </div>
             <div class="hidden md:inline-block">
                 <a href="#" class="px-4 py-2">
@@ -33,7 +39,7 @@
             </div>
             <!-- Hamburguer Menu -->
             <div class="md:hidden">
-                <button id="menu-toggle" class="text=black">
+                <button id="menu-toggle" class="text-black">
                     <i id="menu-icon" class="fa-solid fa-bars"></i>
                 </button>
             </div>
@@ -43,12 +49,28 @@
     <!-- Mobile View! -->
     <div id="mobile-menu" class="hidden fixed inset-0 z-50 flex flex-col items-center justify-center bg-opacity-90 md:hidden bg-gray-100 w-1/2 h-1/3 float-end mt-2 me-2 py-4 rounded-md shadow-lg " >
         <div class="flex flex-col items-center text-center text-black space-y-4 px-4 py-2">
-            <a href="http://google.com/" class="w-full hover:bg-sky-400 px-3 py-2 rounded">Home</a>
-            <a href="#" class="w-full hover:bg-sky-400 px-3 py-2 rounded">Destinations</a>
-            <a href="#" class="w-full hover:bg-sky-400 px-3 py-2 rounded">Shop</a>
-            <a href="#" class="w-full hover:bg-sky-400 px-3 py-2 rounded">Contact</a>
+            <a href="#" class="w-full hover:bg-sky-400 px-3 py-2 rounded nav-link">Home</a>
+            <a href="#" class="w-full hover:bg-sky-400 px-3 py-2 rounded nav-link">Destinations</a>
+            <a href="#" class="w-full hover:bg-sky-400 px-3 py-2 rounded nav-link">Shop</a>
+            <a href="#" class="w-full hover:bg-sky-400 px-3 py-2 rounded nav-link">Contact</a>
         </div>
     </div>    
+    <script>
+        const toggleButton = document.getElementById('menu-toggle');
+        const menuIcon = document.getElementById('menu-icon');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        toggleButton.addEventListener('click', function(){
+            mobileMenu.classList.toggle('hidden');
+
+            if(menuIcon.classList.contains('fa-bars')) {
+                menuIcon.classList.replace('fa-bars', 'fa-xmark');
+            } else {
+                menuIcon.classList.replace('fa-xmark', 'fa-bars');
+            }
+        });
+    </script>
+    <!-- Nav Bar ends here -->
 
     <main>
         <section id="Plans" class="bg-light mt-5">
@@ -104,23 +126,8 @@
       </div>
     </main>
 
-  <script>
-        const toggleButton = document.getElementById('menu-toggle');
-        const menuIcon = document.getElementById('menu-icon');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        toggleButton.addEventListener('click', function(){
-            mobileMenu.classList.toggle('hidden');
-
-            if(menuIcon.classList.contains('fa-bars')) {
-                menuIcon.classList.replace('fa-bars', 'fa-xmark');
-            } else {
-                menuIcon.classList.replace('fa-xmark', 'fa-bars');
-            }
-        });
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  <!-- Footer -->
+    <!-- Footer -->
      <footer class="bg-gray-100 text-black">
         <div class="container mx-auto px-14 py-4">
             <div class="grid md:grid-cols-12 grid-cols-1 gap-4">
@@ -128,10 +135,11 @@
                     <a href="#">
                         <img src="https://png.pngtree.com/png-clipart/20250115/original/pngtree-airplane-logo-vector-png-image_19677986.png" alt="" class="h-12">
                     </a>
-                    <p class="mt-6 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, placeat!</p>
+                    <p class="mt-6 text-black">&copy; 2025 Global Voyage. All rights reserved.</p>
+</p>
                 </div>
                 <div class="lg:col-span-2 md:col-span-4 col-span-12 text-center">
-                    <h5 class="tracking-wide text-gray-100 font-semibold">Company</h5>
+                    <h5 class="tracking-wide text-gray-700 font-semibold">Company</h5>
                     <ul class="list-none mt-6 space-y-2">
                         <li><a href="#" class="hover:text-gray-400 transition-all duration-500 ease-in-out">Home</a></li>
                         <li><a href="#" class="hover:text-gray-400 transition-all duration-500 ease-in-out">Destinations</a></li>
@@ -140,7 +148,7 @@
                     </ul>
                 </div>
                 <div class="lg:col-span-3 md:col-span-4 col-span-12 text-center">
-                    <h5 class="tracking-wide text-gray-100 font-semibold">Important Links</h5>
+                    <h5 class="tracking-wide text-gray-700 font-semibold">Important Links</h5>
                     <ul class="list-none mt-6 space-y-2">
                         <li><a href="#" class="hover:text-gray-400 transition-all duration-500 ease-in-out">Terms of Service</a></li>
                         <li><a href="#" class="hover:text-gray-400 transition-all duration-500 ease-in-out">Privacy Policy</a></li>
