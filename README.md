@@ -24,8 +24,14 @@ Contains Contact page (form/info)
 ### `dest1/`
 First destination page assets
 
-### `dest2/`
-Second destination page assets
+### `Alaska/`
+Alaska destination page assets
+
+### `Andalusia/`
+Andalusia destination page assets
+
+### `Egypt/`
+Egypt destination page assets
 
 ### `home/`
 Homepage assets
